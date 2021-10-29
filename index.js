@@ -66,8 +66,11 @@ async function run() {
 run().catch(console.dir);
 
 app.get('/', (req, res) => {
-    res.send('Hello !')
+    res.send('i am here  !')
 });
+app.get('/hello', (req, res) => {
+    res.send('Hello updated here ')
+})
 
 app.listen(port, () => {
     console.log('opening express form prot: ', port);
